@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+
+# Go
+bin/
+*.exe
+*.out
+*.test
+
+# VSCode & Editor junk
+.vscode/
+.DS_Store
+
+# Logs
+*.log
+
+# Docker
+*.tar
+*.gz
+*.zip
+
+# Node (if ever used)
+node_modules/
+
+# System junk
+Thumbs.db

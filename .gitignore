@@ -12,20 +12,17 @@ bin/
 *.out
 *.test
 
+# Logs
+*.log
+
 # VSCode & Editor junk
 .vscode/
 .DS_Store
 
-# Logs
-*.log
-
-# Docker
+# Docker build junk
 *.tar
 *.gz
 *.zip
-
-# Node (if ever used)
-node_modules/
 
 # System junk
 Thumbs.db

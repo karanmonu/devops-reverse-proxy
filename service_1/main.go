@@ -8,11 +8,12 @@ import (
 
 func main() {
 	http.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
-		jsonResponse(w, map[string]string{
-			"status":  "ok",
-			"service": "1",
-		})
-	})
+    log.Println("Received /ping on Service 1")
+    jsonResponse(w, map[string]string{
+        "status":  "ok",
+        "service": "1",
+    })
+})
 
 	http.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
 		jsonResponse(w, map[string]string{
@@ -21,7 +22,7 @@ func main() {
 	})
 
 	log.Println("Service 1 listening on port 8001...")
-	if err := http.ListenAndServe(":8001", nil); err != nil {
+	if err := http.ListenAndServe("0.0.0.0:8001", nil); err != nil {
 		log.Fatalf("Server failed: %v", err)
 	}
 }

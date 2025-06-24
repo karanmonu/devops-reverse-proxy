@@ -15,39 +15,18 @@ Everything runs in containers and is spun up with one command.
 
 ---
 
-## 🗂️ Project Structure
-
-.
-├── docker-compose.yml # Orchestrates everything
-├── nginx/
-│ ├── default.conf # Nginx routing config
-│ └── Dockerfile # Nginx Docker setup
-├── service_1/
-│ ├── main.go # Go server
-│ ├── Dockerfile
-│ ├── go.mod
-│ └── README.md
-├── service_2/
-│ ├── app.py # Flask server
-│ ├── pyproject.toml
-│ ├── uv.lock
-│ └── Dockerfile
-├── test.sh # Optional test script
-└── README.md # This file
-
-
----
-
 ## 🧪 How to Run It
 
 If you have Docker and Docker Compose installed, just run:
 
 ```bash
 docker compose up --build
+
 Wait a few seconds and you’ll have:
 
 Go service running at localhost:8080/service1
 Flask service running at localhost:8080/service2
+
 Test it out:
 
 curl http://localhost:8080/service1/ping

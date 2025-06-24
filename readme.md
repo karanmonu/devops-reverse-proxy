@@ -56,6 +56,7 @@ curl http://localhost:8080/service1/ping
 curl http://localhost:8080/service2/hello
 # {"message": "Hello from Service 2"}
 
+---
 🌐 How Routing Works
 
 Nginx is configured to:
@@ -64,6 +65,7 @@ Proxy /service1 → service_1 container (Go app)
 Proxy /service2 → service_2 container (Flask app)
 It also logs every request with timestamps and URLs. So you’ll see clean logs in real-time when requests hit the proxy.
 
+---
 ✅ Bonus Features
 
 🩺 Health Checks
@@ -79,6 +81,7 @@ Nginx runs inside a container (not on host).
 All services use bridge networking.
 Clean separation of Dockerfiles and config for maintainability.
 Used uv (by Astral) for Python dependency management and modern packaging.
+---
 💬 Reflections
 
 This project helped me practice real-world container orchestration. Debugging container health checks, handling Go modules, and integrating uv for Python was a great learning experience.

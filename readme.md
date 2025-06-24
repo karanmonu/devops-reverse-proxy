@@ -43,7 +43,8 @@ Nginx is configured to:
 - Proxy /service1 → service_1 container (Go app)
 - Proxy /service2 → service_2 container (Flask app)
 
-It also logs every request with timestamps and URLs. So you’ll see clean logs in real-time when requests hit the proxy.
+it also logs every request with timestamps and URL's. So you'll see clean logs in real-time when requests hit the proxy.
+
 ---
 ## ✅ Bonus Features
 

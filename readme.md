@@ -55,7 +55,7 @@ curl http://localhost:8080/service1/ping
 
 curl http://localhost:8080/service2/hello
 # {"message": "Hello from Service 2"}
-
+```
 ---
 🌐 How Routing Works
 

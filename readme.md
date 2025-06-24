@@ -21,14 +21,14 @@ If you have Docker and Docker Compose installed, just run:
 
 ```bash
 docker compose up --build
-
+```
 Wait a few seconds and you’ll have:
 
 Go service running at localhost:8080/service1
 Flask service running at localhost:8080/service2
 
 Test it out:
-
+```
 curl http://localhost:8080/service1/ping
 # {"status": "ok", "service": "1"}
 
